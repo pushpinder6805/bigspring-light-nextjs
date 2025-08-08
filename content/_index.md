@@ -7,8 +7,7 @@ content: Build, grow, and optimize your <strong>Discourse community</strong> wit
     label: "Contact Us"
     link: "/contact"
 
-# feature
-  feature: 
+# feature: 
   title: Everything You Need to Supercharge Your Discourse Community
   features:
   - name: "Clean Code"
@@ -29,6 +28,7 @@ content: Build, grow, and optimize your <strong>Discourse community</strong> wit
   - name: "Cloud Support"
     icon: "/images/cloud.svg"
     content: "Fully compatible with AWS, Google Cloud, and other hosting platforms — we ensure your Discourse forum runs smoothly in any environment."
+
 
 
 # services
