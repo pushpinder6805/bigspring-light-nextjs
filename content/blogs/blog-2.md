@@ -1,7 +1,7 @@
 ---
 title: Make Your Discourse Forum Multilingual in One Click – $299 Lifetime Plugin
 description: "Turn your Discourse forum into a fully multilingual platform instantly with our one-time $299 plugin. One-click translation, AWS-powered, lifetime access."
-image: "/images/multi1.png"
+image: "/images/multi1.jpg"
 date: 2025-08-08T05:00:00Z
 draft: false
 ---
