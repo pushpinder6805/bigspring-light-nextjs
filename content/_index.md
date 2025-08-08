@@ -1,11 +1,7 @@
+---
 banner:
-  title: Let Us Solve Your Discourse Community Development Challenges
-  content: >
-    Build, grow, and optimize your <strong>Discourse community</strong> with our expert development services. 
-    From custom plugins and theme design to performance optimization and multilingual integration, 
-    we deliver solutions that make your forum faster, smarter, and more engaging. <br/> 
-    Whether you’re launching a new forum or improving an existing one, our team ensures a seamless experience 
-    that boosts user engagement, improves SEO, and scales with your community’s needs.
+  title: Let us solve your critical website development challenges
+  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus.
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
@@ -33,7 +29,6 @@ feature:
   - name: "Cloud Support"
     icon: "/images/cloud.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-
 
 # services
 services:
