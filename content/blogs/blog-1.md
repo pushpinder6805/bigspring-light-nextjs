@@ -77,7 +77,7 @@ The Discourse installation will take approximately 2-8 minutes, after which your
 # Step 3 — Registering an Administrator Account
 
 Visit discourse.your_domain in your favorite web browser, and you will see the Discourse ‘Congrats’ splash screen.
-/images/installed.jpg"
+/images/installed.png"
 
 If you receive a 502 Bad Gateway error, try waiting a minute or two and then refreshing your browser; your Discourse installation might not have completed.
 
