@@ -1,34 +1,35 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus.
+  title: Let Us Solve Your Discourse Community Development Challenges
+content: Build, grow, and optimize your <strong>Discourse community</strong> with our expert development services. From custom plugins and theme design to performance optimization and multilingual integration, we deliver solutions that make your forum faster, smarter, and more engaging. <br/> Whether you’re launching a new forum or improving an existing one, our team ensures a seamless experience that boosts user engagement, improves SEO, and scales with your community’s needs.
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
     link: "/contact"
 
 # feature
-feature: 
-  title: Something You Need To Know
+  feature: 
+  title: Everything You Need to Supercharge Your Discourse Community
   features:
   - name: "Clean Code"
     icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "We follow best coding practices to ensure your Discourse plugins, themes, and integrations are lightweight, maintainable, and bug-free."
   - name: "Object Oriented"
     icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "Our development follows object-oriented principles, making your Discourse customizations scalable, efficient, and easy to upgrade."
   - name: "24h Service"
     icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "Get round-the-clock support for your Discourse forum — from urgent fixes to ongoing maintenance, we’re always available when you need us."
   - name: "Value for Money"
     icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "One-time payments, transparent pricing, and long-term results — we deliver the best ROI for your Discourse community investments."
   - name: "Faster Response"
     icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "We prioritize speed — whether it’s replying to support tickets or optimizing your forum for faster load times and better SEO rankings."
   - name: "Cloud Support"
     icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "Fully compatible with AWS, Google Cloud, and other hosting platforms — we ensure your Discourse forum runs smoothly in any environment."
+
 
 # services
 services:
