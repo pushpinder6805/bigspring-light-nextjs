@@ -36,3 +36,11 @@ Set `config.params.contact_form_action` to a real form submission endpoint befor
 ## Verification
 
 Run `npm install`, `npm run build`, and `npm run start`. Check the homepage, contact, pricing, FAQ, blog listing, paginated listing, all five articles, content elements, and the not-found page. Responsive QA covers 375px, 768px, 1024px, and 1440px widths. Keyboard checks cover the mobile menu, Escape dismissal, FAQ expansion, form validation, and reduced motion. The completed implementation passed 48 page/viewport checks and 12 automated WCAG A/AA audits across representative pages at mobile and desktop widths, with no reported violations. Pagination navigation was also checked. Submit a message only after configuring a real endpoint.
+
+## Editorial library
+
+The blog contains 50 original short guides in seven service-related categories, alongside the five existing posts. Markdown frontmatter supports `category` and `author`; reading time is derived from article content. Existing URLs and four-post server pagination remain intact.
+
+`BlogExplorer` searches titles, summaries, and categories across the entire library. Topic buttons combine with search, results are announced through a live region, and larger filtered collections load in groups of twelve. `ArticleCover` supplies a shared decorative cover when an article has no image. Existing post images and MDX shortcodes are preserved.
+
+New guides contain no external source links. Unknown article slugs return the site's missing-page response. Add Markdown files and rebuild to publish new article routes.

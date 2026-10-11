@@ -3,7 +3,9 @@ import config from "@config/config.json";
 import SeoMeta from "@layouts/SeoMeta";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { markdownify } from "@lib/utils/textConverter";
-import Posts from "@partials/Posts";
+import BlogExplorer from "@components/BlogExplorer";
+import { plainify } from "@lib/utils/textConverter";
+import { notFound } from "next/navigation";
 const { blog_folder } = config.settings;
 
 // blog pagination
@@ -20,29 +22,52 @@ const BlogPagination = async ({ params }) => {
   const indexOfLastPost = currentPage * pagination;
   const indexOfFirstPost = indexOfLastPost - pagination;
   const totalPages = Math.ceil(posts.length / pagination);
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  if (
+    !Number.isInteger(currentPage) ||
+    currentPage < 1 ||
+    (totalPages > 0 && currentPage > totalPages)
+  )
+    notFound();
+  const summaries = posts.map((post) => ({
+    slug: post.slug,
+    frontmatter: {
+      title: post.frontmatter.title,
+      image: post.frontmatter.image || null,
+      category: post.frontmatter.category || "Insights",
+    },
+    summary:
+      post.frontmatter.desc ||
+      post.frontmatter.description ||
+      plainify(post.content).slice(0, Number(config.settings.summary_length)),
+    readingTime: Math.max(
+      1,
+      Math.ceil(plainify(post.content).split(/\s+/).length / 220),
+    ),
+  }));
+  const currentPosts = summaries.slice(indexOfFirstPost, indexOfLastPost);
   const { frontmatter } = postIndex;
   const { title } = frontmatter;
 
   return (
     <>
-      <SeoMeta title={title} />
+      <SeoMeta title={title} description={frontmatter.description} />
       <section className="section">
         <div className="container">
           <div className="page-heading">
             <span className="eyebrow">IDEAS & INSIGHTS</span>
             {markdownify(title, "h1")}
             <p>
-              Perspectives on design, development, and building better digital
-              experiences.
+              Guides to building better websites, applications, and connected
+              products. Written for curious teams and ambitious businesses.
             </p>
           </div>
-          <Posts posts={currentPosts} />
-          <Pagination
-            section={blog_folder}
-            totalPages={totalPages}
-            currentPage={currentPage}
-          />
+          <BlogExplorer posts={summaries} currentPosts={currentPosts}>
+            <Pagination
+              section={blog_folder}
+              totalPages={totalPages}
+              currentPage={currentPage}
+            />
+          </BlogExplorer>
         </div>
       </section>
     </>

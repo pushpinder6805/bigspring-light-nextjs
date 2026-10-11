@@ -1,16 +1,11 @@
 import config from "@config/config.json";
-import { plainify } from "@lib/utils/textConverter";
 import Icon from "@components/Icon";
+import ArticleCover from "@components/ArticleCover";
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Posts({ posts }) {
-  if (!posts.length)
-    return (
-      <div className="empty-state">
-        <h2>More ideas are on the way.</h2>
-        <p>Check back soon for new articles and insights.</p>
-      </div>
-    );
+  if (!posts.length) return null;
   return (
     <div className="blog-grid">
       {posts.map((post, i) => (
@@ -18,12 +13,12 @@ export default function Posts({ posts }) {
           key={post.slug}
           className={`blog-card ${i === 0 ? "blog-featured" : ""}`}
         >
-          {post.frontmatter.image && (
-            <Link
-              href={`/${config.settings.blog_folder}/${post.slug}`}
-              tabIndex={-1}
-              aria-hidden="true"
-            >
+          <Link
+            href={`/${config.settings.blog_folder}/${post.slug}`}
+            tabIndex={-1}
+            aria-hidden="true"
+          >
+            {post.frontmatter.image ? (
               <Image
                 src={post.frontmatter.image}
                 alt=""
@@ -31,25 +26,26 @@ export default function Posts({ posts }) {
                 height={400}
                 priority={i === 0}
               />
-            </Link>
-          )}
+            ) : (
+              <ArticleCover category={post.frontmatter.category} />
+            )}
+          </Link>
           <div className="blog-card-body">
-            <span className="eyebrow">
-              {i === 0 ? "FEATURED INSIGHT" : "FROM THE BLOG"}
-            </span>
+            <div className="blog-card-meta">
+              <span className="eyebrow">
+                {post.frontmatter.category || "Insights"}
+              </span>
+              <span>{post.readingTime || 1} min read</span>
+            </div>
             <h2 className="mt-3">
               <Link href={`/${config.settings.blog_folder}/${post.slug}`}>
                 {post.frontmatter.title}
               </Link>
             </h2>
             <p>
-              {post.frontmatter.desc ||
-                plainify(
-                  post.content?.slice(
-                    0,
-                    Number(config.settings.summary_length),
-                  ),
-                )}
+              {post.summary ||
+                post.frontmatter.desc ||
+                post.frontmatter.description}
             </p>
             <Link
               className="text-link"
