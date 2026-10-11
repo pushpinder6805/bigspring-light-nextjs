@@ -5,6 +5,8 @@ description: "A timeout can leave the caller uncertain whether a payment, invoic
 desc: "A timeout can leave the caller uncertain whether a payment, invoice, or account creation succeeded."
 category: "SaaS integrations"
 author: "TheTechSpectra"
+image: "/images/articles/idempotency-for-payments-and-provisioning.svg"
+image_alt: "Idempotency for payments and provisioning \u2014 request key, check record, execute once, saved result"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "Monitoring should tell a team when customers are struggling and wh
 desc: "Monitoring should tell a team when customers are struggling and where to investigate."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/monitoring-applications-with-actionable-signals.svg"
+image_alt: "Monitoring applications with actionable signals \u2014 latency, error rate, traffic, actionable alert"
 draft: false
 ---
 

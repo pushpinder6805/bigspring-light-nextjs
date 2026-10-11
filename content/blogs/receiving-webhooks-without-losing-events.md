@@ -5,6 +5,8 @@ description: "Webhooks connect billing, commerce, and productivity tools to a pr
 desc: "Webhooks connect billing, commerce, and productivity tools to a product."
 category: "SaaS integrations"
 author: "TheTechSpectra"
+image: "/images/articles/receiving-webhooks-without-losing-events.svg"
+image_alt: "Receiving webhooks without losing events \u2014 event, verify, persist, process"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "Synchronizing a CRM, billing platform, and internal dashboard requ
 desc: "Synchronizing a CRM, billing platform, and internal dashboard requires more than connecting endpoints."
 category: "SaaS integrations"
 author: "TheTechSpectra"
+image: "/images/articles/syncing-data-between-saas-products.svg"
+image_alt: "Syncing data between SaaS products \u2014 source, change event, sync, reconcile"
 draft: false
 ---
 

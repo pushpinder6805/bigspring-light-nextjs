@@ -5,6 +5,8 @@ description: "Collision detection turns movement into interaction: collecting it
 desc: "Collision detection turns movement into interaction: collecting items, hitting obstacles, or landing on platforms."
 category: "Games & realtime"
 author: "TheTechSpectra"
+image: "/images/articles/collision-detection-for-simple-2d-games.svg"
+image_alt: "Collision detection for simple 2D games \u2014 player, hitbox, obstacle, collision"
 draft: false
 ---
 

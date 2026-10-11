@@ -5,6 +5,8 @@ description: "In a multiplayer game, clients should not be the final authority o
 desc: "In a multiplayer game, clients should not be the final authority over scores, movement, or rewards."
 category: "Games & realtime"
 author: "TheTechSpectra"
+image: "/images/articles/authoritative-servers-for-multiplayer-games.svg"
+image_alt: "Authoritative servers for multiplayer games \u2014 player input, game server, validate rules, shared state"
 draft: false
 ---
 

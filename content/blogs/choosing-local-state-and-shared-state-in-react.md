@@ -5,6 +5,8 @@ description: "State design affects how easily a web application can evolve."
 desc: "State design affects how easily a web application can evolve."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/choosing-local-state-and-shared-state-in-react.svg"
+image_alt: "Choosing local state and shared state in React \u2014 component, local state, context, shared state"
 draft: false
 ---
 

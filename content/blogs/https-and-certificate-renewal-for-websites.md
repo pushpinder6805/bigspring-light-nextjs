@@ -5,6 +5,8 @@ description: "HTTPS protects traffic between visitors and the website."
 desc: "HTTPS protects traffic between visitors and the website."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/https-and-certificate-renewal-for-websites.svg"
+image_alt: "HTTPS and certificate renewal for websites \u2014 browser, tls certificate, https, secure origin"
 draft: false
 ---
 

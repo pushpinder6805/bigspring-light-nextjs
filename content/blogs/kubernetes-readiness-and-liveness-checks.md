@@ -5,6 +5,8 @@ description: "Kubernetes needs signals that distinguish an application that can 
 desc: "Kubernetes needs signals that distinguish an application that can receive traffic from one that should be restarted."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/kubernetes-readiness-and-liveness-checks.svg"
+image_alt: "Kubernetes readiness and liveness checks \u2014 startup, readiness, liveness, healthy pod"
 draft: false
 ---
 

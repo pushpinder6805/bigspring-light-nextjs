@@ -5,6 +5,8 @@ description: "Containers are replaceable, but customer data often is not."
 desc: "Containers are replaceable, but customer data often is not."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/persistent-storage-for-containerized-services.svg"
+image_alt: "Persistent storage for containerized services \u2014 container, volume, replace app, data retained"
 draft: false
 ---
 

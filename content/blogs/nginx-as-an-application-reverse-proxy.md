@@ -5,6 +5,8 @@ description: "A reverse proxy can route requests to an application while handlin
 desc: "A reverse proxy can route requests to an application while handling connection management and other edge concerns."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/nginx-as-an-application-reverse-proxy.svg"
+image_alt: "Nginx as an application reverse proxy \u2014 client, nginx, upstream app, response"
 draft: false
 ---
 

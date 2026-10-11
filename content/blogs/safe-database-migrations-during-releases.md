@@ -5,6 +5,8 @@ description: "A production migration affects both stored data and running applic
 desc: "A production migration affects both stored data and running application versions."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/safe-database-migrations-during-releases.svg"
+image_alt: "Safe database migrations during releases \u2014 add column, deploy code, backfill, remove old"
 draft: false
 ---
 

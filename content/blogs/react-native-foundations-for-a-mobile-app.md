@@ -5,6 +5,8 @@ description: "React Native lets teams use React concepts to build mobile interfa
 desc: "React Native lets teams use React concepts to build mobile interfaces, while the app still needs to respect platform conventions and device constraints."
 category: "Mobile apps"
 author: "TheTechSpectra"
+image: "/images/articles/react-native-foundations-for-a-mobile-app.svg"
+image_alt: "React Native foundations for a mobile app \u2014 native ui, input, safe area, device tests"
 draft: false
 ---
 

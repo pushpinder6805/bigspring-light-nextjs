@@ -5,6 +5,8 @@ description: "Canvas is useful for interactive scenes that draw many objects int
 desc: "Canvas is useful for interactive scenes that draw many objects into one surface."
 category: "Games & realtime"
 author: "TheTechSpectra"
+image: "/images/articles/drawing-a-game-interface-with-canvas.svg"
+image_alt: "Drawing a game interface with Canvas \u2014 canvas, scene, controls, player input"
 draft: false
 ---
 

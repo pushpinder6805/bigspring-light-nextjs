@@ -5,6 +5,8 @@ description: "Routes are part of a product's information architecture."
 desc: "Routes are part of a product's information architecture."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/planning-routes-for-a-web-application.svg"
+image_alt: "Planning routes for a web application \u2014 /projects, /projects/42, loading state, missing resource"
 draft: false
 ---
 

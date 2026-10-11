@@ -5,6 +5,8 @@ description: "Good error responses help client teams recover and help support te
 desc: "Good error responses help client teams recover and help support teams investigate."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/designing-useful-api-error-responses.svg"
+image_alt: "Designing useful API error responses \u2014 error code, clear message, field details, next action"
 draft: false
 ---
 

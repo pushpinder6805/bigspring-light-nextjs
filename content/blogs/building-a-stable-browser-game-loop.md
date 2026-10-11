@@ -5,6 +5,8 @@ description: "A browser game needs consistent movement on devices with different
 desc: "A browser game needs consistent movement on devices with different refresh rates."
 category: "Games & realtime"
 author: "TheTechSpectra"
+image: "/images/articles/building-a-stable-browser-game-loop.svg"
+image_alt: "Building a stable browser game loop \u2014 input, update, render, next frame"
 draft: false
 ---
 

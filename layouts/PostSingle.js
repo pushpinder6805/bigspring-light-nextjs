@@ -1,4 +1,3 @@
-import { markdownify } from "@lib/utils/textConverter";
 import MDXContent from "app/helper/MDXContent";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,20 +6,21 @@ import { plainify } from "@lib/utils/textConverter";
 import SeoMeta from "./SeoMeta";
 
 const PostSingle = ({ frontmatter, content }) => {
-  let { description, title, image, category, author } = frontmatter;
+  const { title, image, image_alt, category, author } = frontmatter;
+  const description =
+    frontmatter.description || plainify(content).slice(0, 160);
   const readingTime = Math.max(
     1,
     Math.ceil(plainify(content).split(/\s+/).length / 220),
   );
-  description = description ? description : content.slice(0, 120);
 
   return (
     <>
-      <SeoMeta title={title} description={description} />
-      <section className="section">
+      <SeoMeta title={title} description={description} image={image} />
+      <section className="section article-section">
         <div className="container">
-          <div className="row">
-            <article className="col-12 mx-auto text-center md:col-8">
+          <article className="article-page">
+            <header className="article-header">
               <Link href="/blogs" className="article-back">
                 ← Back to articles
               </Link>
@@ -30,25 +30,29 @@ const PostSingle = ({ frontmatter, content }) => {
                   {author || "TheTechSpectra"} · {readingTime} min read
                 </span>
               </div>
+              <h1>{title}</h1>
+              {frontmatter.category && (
+                <p className="article-intro">{description}</p>
+              )}
+            </header>
+            <div className="article-hero">
               {image ? (
                 <Image
                   src={image}
-                  height="500"
-                  width="1000"
-                  alt={title}
-                  priority={true}
-                  className="rounded-lg"
+                  height={675}
+                  width={1200}
+                  alt={image_alt || title}
+                  priority
+                  sizes="(max-width: 860px) 92vw, 820px"
                 />
               ) : (
                 <ArticleCover category={category} />
               )}
-              {markdownify(title, "h1", "h2 mb-6 mt-6 text-left")}
-
-              <div className="content mb-16 text-left">
-                <MDXContent content={content} />
-              </div>
-            </article>
-          </div>
+            </div>
+            <div className="content article-content">
+              <MDXContent content={content} />
+            </div>
+          </article>
         </div>
       </section>
     </>

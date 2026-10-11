@@ -5,6 +5,8 @@ description: "CSV imports can save hours of manual entry for a SaaS customer."
 desc: "CSV imports can save hours of manual entry for a SaaS customer."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/building-reliable-csv-imports.svg"
+image_alt: "Building reliable CSV imports \u2014 csv file, validate, preview, import"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "Uploads introduce concerns beyond the file picker: permissions, st
 desc: "Uploads introduce concerns beyond the file picker: permissions, storage, processing, and eventual cleanup."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/handling-file-uploads-safely.svg"
+image_alt: "Handling file uploads safely \u2014 file, validate, store, process"
 draft: false
 ---
 

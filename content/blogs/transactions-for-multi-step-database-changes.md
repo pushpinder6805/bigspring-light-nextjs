@@ -5,6 +5,8 @@ description: "Some operations must succeed as a unit: an order and its items, a 
 desc: "Some operations must succeed as a unit: an order and its items, a balance transfer, or a reservation and its capacity change."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/transactions-for-multi-step-database-changes.svg"
+image_alt: "Transactions for multi-step database changes \u2014 begin, write, check, commit / rollback"
 draft: false
 ---
 

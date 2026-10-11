@@ -5,6 +5,8 @@ description: "A useful API gives frontend and integration teams a predictable co
 desc: "A useful API gives frontend and integration teams a predictable contract."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/designing-rest-apis-around-resources.svg"
+image_alt: "Designing REST APIs around resources \u2014 request, resource, authorize, response"
 draft: false
 ---
 

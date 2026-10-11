@@ -5,6 +5,8 @@ description: "Caching can improve repeated reads, but stale data can confuse cus
 desc: "Caching can improve repeated reads, but stale data can confuse customers or expose incorrect permissions."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/redis-caching-with-an-invalidation-plan.svg"
+image_alt: "Redis caching with an invalidation plan \u2014 request, cache key, source data, expire / refresh"
 draft: false
 ---
 

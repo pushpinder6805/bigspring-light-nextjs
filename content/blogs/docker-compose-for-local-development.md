@@ -5,6 +5,8 @@ description: "A team often needs a web server, database, and worker to develop o
 desc: "A team often needs a web server, database, and worker to develop one product."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/docker-compose-for-local-development.svg"
+image_alt: "Docker Compose for local development \u2014 web app, database, worker, local network"
 draft: false
 ---
 

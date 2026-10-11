@@ -5,6 +5,8 @@ description: "A SaaS database should reflect the relationships and constraints o
 desc: "A SaaS database should reflect the relationships and constraints of the product."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/postgresql-schema-design-for-saas.svg"
+image_alt: "PostgreSQL schema design for SaaS \u2014 workspaces, members, projects, tenant ownership"
 draft: false
 ---
 

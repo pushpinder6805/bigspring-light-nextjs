@@ -5,6 +5,8 @@ description: "An endpoint that returns every record can become slow long before 
 desc: "An endpoint that returns every record can become slow long before the interface feels large."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/pagination-for-large-api-collections.svg"
+image_alt: "Pagination for large API collections \u2014 records, stable sort, cursor, next page"
 draft: false
 ---
 

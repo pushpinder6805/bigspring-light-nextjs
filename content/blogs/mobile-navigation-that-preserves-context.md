@@ -5,6 +5,8 @@ description: "Navigation determines whether a mobile app feels predictable."
 desc: "Navigation determines whether a mobile app feels predictable."
 category: "Mobile apps"
 author: "TheTechSpectra"
+image: "/images/articles/mobile-navigation-that-preserves-context.svg"
+image_alt: "Mobile navigation that preserves context \u2014 home, projects, project detail, back to work"
 draft: false
 ---
 

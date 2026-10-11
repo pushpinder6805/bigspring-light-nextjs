@@ -5,6 +5,8 @@ description: "Location features should solve a specific customer need, such as n
 desc: "Location features should solve a specific customer need, such as nearby services or delivery tracking."
 category: "Mobile apps"
 author: "TheTechSpectra"
+image: "/images/articles/location-permissions-with-a-clear-purpose.svg"
+image_alt: "Location permissions with a clear purpose \u2014 nearby services, location, allow access, manual entry"
 draft: false
 ---
 

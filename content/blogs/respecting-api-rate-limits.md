@@ -5,6 +5,8 @@ description: "External services limit traffic to protect their capacity."
 desc: "External services limit traffic to protect their capacity."
 category: "SaaS integrations"
 author: "TheTechSpectra"
+image: "/images/articles/respecting-api-rate-limits.svg"
+image_alt: "Respecting API rate limits \u2014 request, budget, backoff, retry safely"
 draft: false
 ---
 

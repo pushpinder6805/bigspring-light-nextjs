@@ -5,6 +5,8 @@ description: "Reporting queries should answer a business question precisely."
 desc: "Reporting queries should answer a business question precisely."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/writing-useful-sql-reports.svg"
+image_alt: "Writing useful SQL reports \u2014 filter, join, aggregate, business report"
 draft: false
 ---
 

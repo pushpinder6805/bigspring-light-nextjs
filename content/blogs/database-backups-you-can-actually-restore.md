@@ -5,6 +5,8 @@ description: "A backup is useful only when the team can restore the right data w
 desc: "A backup is useful only when the team can restore the right data within an acceptable time."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/database-backups-you-can-actually-restore.svg"
+image_alt: "Database backups you can actually restore \u2014 live data, backup, restore, verified data"
 draft: false
 ---
 

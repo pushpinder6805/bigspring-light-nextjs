@@ -5,6 +5,8 @@ description: "Connectivity changes during normal mobile use."
 desc: "Connectivity changes during normal mobile use."
 category: "Mobile apps"
 author: "TheTechSpectra"
+image: "/images/articles/designing-offline-friendly-mobile-experiences.svg"
+image_alt: "Designing offline-friendly mobile experiences \u2014 local data, pending edits, sync queue, back online"
 draft: false
 ---
 

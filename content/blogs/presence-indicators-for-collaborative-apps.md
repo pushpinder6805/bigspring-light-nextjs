@@ -5,6 +5,8 @@ description: "Showing who is online can make collaboration feel immediate, but p
 desc: "Showing who is online can make collaboration feel immediate, but presence is an estimate rather than a permanent fact."
 category: "Games & realtime"
 author: "TheTechSpectra"
+image: "/images/articles/presence-indicators-for-collaborative-apps.svg"
+image_alt: "Presence indicators for collaborative apps \u2014 active client, heartbeat, presence lease, online / away"
 draft: false
 ---
 

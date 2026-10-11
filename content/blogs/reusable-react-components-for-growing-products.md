@@ -5,6 +5,8 @@ description: "An expanding SaaS interface often repeats the same button, card, a
 desc: "An expanding SaaS interface often repeats the same button, card, and field in dozens of places."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/reusable-react-components-for-growing-products.svg"
+image_alt: "Reusable React components for growing products \u2014 button, input, card, shared variants"
 draft: false
 ---
 

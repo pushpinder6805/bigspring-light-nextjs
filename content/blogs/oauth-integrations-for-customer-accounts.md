@@ -5,6 +5,8 @@ description: "OAuth lets customers authorize access to another service without g
 desc: "OAuth lets customers authorize access to another service without giving your product their password."
 category: "SaaS integrations"
 author: "TheTechSpectra"
+image: "/images/articles/oauth-integrations-for-customer-accounts.svg"
+image_alt: "OAuth integrations for customer accounts \u2014 customer, consent, scoped token, connected account"
 draft: false
 ---
 

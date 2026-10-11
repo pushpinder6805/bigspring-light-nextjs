@@ -5,6 +5,8 @@ description: "Continuous delivery should make releases easier to trust."
 desc: "Continuous delivery should make releases easier to trust."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/a-ci-cd-pipeline-with-useful-release-checks.svg"
+image_alt: "A CI/CD pipeline with useful release checks \u2014 commit, checks, preview, release"
 draft: false
 ---
 

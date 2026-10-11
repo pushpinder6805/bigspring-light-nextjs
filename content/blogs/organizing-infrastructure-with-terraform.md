@@ -5,6 +5,8 @@ description: "Infrastructure as code helps a team review changes to networks, se
 desc: "Infrastructure as code helps a team review changes to networks, services, and access policies."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/organizing-infrastructure-with-terraform.svg"
+image_alt: "Organizing infrastructure with Terraform \u2014 config, plan, review, apply"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "Indexes can speed up reads, but they consume storage and add work 
 desc: "Indexes can speed up reads, but they consume storage and add work to writes."
 category: "Databases"
 author: "TheTechSpectra"
+image: "/images/articles/choosing-database-indexes-from-real-queries.svg"
+image_alt: "Choosing database indexes from real queries \u2014 customers, tenant index, query plan, fast lookup"
 draft: false
 ---
 

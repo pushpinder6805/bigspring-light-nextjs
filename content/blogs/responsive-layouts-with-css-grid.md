@@ -5,6 +5,8 @@ description: "A service website needs to communicate clearly on a narrow phone s
 desc: "A service website needs to communicate clearly on a narrow phone screen and a wide desktop."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/responsive-layouts-with-css-grid.svg"
+image_alt: "Responsive layouts with CSS Grid \u2014 mobile, tablet, desktop, flexible tracks"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "A fast marketing site feels responsive before the visitor even rea
 desc: "A fast marketing site feels responsive before the visitor even reaches a form."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/improving-website-performance-without-guesswork.svg"
+image_alt: "Improving website performance without guesswork \u2014 image size, script cost, layout shift, fast response"
 draft: false
 ---
 

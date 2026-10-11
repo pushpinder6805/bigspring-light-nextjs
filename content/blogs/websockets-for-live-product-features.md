@@ -5,6 +5,8 @@ description: "Live chat, shared dashboards, and collaborative tools need a conne
 desc: "Live chat, shared dashboards, and collaborative tools need a connection model that survives interruption."
 category: "Games & realtime"
 author: "TheTechSpectra"
+image: "/images/articles/websockets-for-live-product-features.svg"
+image_alt: "WebSockets for live product features \u2014 client a, live channel, client b, state recovery"
 draft: false
 ---
 

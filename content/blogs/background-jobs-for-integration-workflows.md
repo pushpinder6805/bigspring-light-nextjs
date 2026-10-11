@@ -5,6 +5,8 @@ description: "Generating reports, syncing accounts, and processing uploads often
 desc: "Generating reports, syncing accounts, and processing uploads often take longer than an HTTP request should."
 category: "SaaS integrations"
 author: "TheTechSpectra"
+image: "/images/articles/background-jobs-for-integration-workflows.svg"
+image_alt: "Background jobs for integration workflows \u2014 request, queue, worker, result"
 draft: false
 ---
 

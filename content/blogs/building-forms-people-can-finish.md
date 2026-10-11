@@ -5,6 +5,8 @@ description: "A contact or onboarding form should help visitors complete a task 
 desc: "A contact or onboarding form should help visitors complete a task with confidence."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/building-forms-people-can-finish.svg"
+image_alt: "Building forms people can finish \u2014 full name, email address, your project, send message"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "A small team can reduce server exposure with a clear, repeatable b
 desc: "A small team can reduce server exposure with a clear, repeatable baseline."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/practical-server-hardening-for-small-teams.svg"
+image_alt: "Practical server hardening for small teams \u2014 identity, firewall, updates, audit logs"
 draft: false
 ---
 

@@ -5,6 +5,8 @@ description: "Notifications can bring people back to a useful event, but too man
 desc: "Notifications can bring people back to a useful event, but too many interruptions weaken trust."
 category: "Mobile apps"
 author: "TheTechSpectra"
+image: "/images/articles/push-notifications-users-can-control.svg"
+image_alt: "Push notifications users can control \u2014 new update, preferences, notification, open project"
 draft: false
 ---
 

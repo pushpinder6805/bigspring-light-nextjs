@@ -5,6 +5,8 @@ description: "A premium interface comes from repeated decisions about typography
 desc: "A premium interface comes from repeated decisions about typography, spacing, contrast, and interaction."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/creating-a-maintainable-design-system.svg"
+image_alt: "Creating a maintainable design system \u2014 color tokens, type scale, components, consistency"
 draft: false
 ---
 

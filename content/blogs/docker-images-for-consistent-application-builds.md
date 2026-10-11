@@ -5,6 +5,8 @@ description: "A container image packages an application's runtime and dependenci
 desc: "A container image packages an application's runtime and dependencies into a repeatable unit."
 category: "Cloud & DevOps"
 author: "TheTechSpectra"
+image: "/images/articles/docker-images-for-consistent-application-builds.svg"
+image_alt: "Docker images for consistent application builds \u2014 source, build, image, container"
 draft: false
 ---
 

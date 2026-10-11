@@ -5,6 +5,8 @@ description: "A mobile form competes with a small screen and an on-screen keyboa
 desc: "A mobile form competes with a small screen and an on-screen keyboard."
 category: "Mobile apps"
 author: "TheTechSpectra"
+image: "/images/articles/mobile-forms-and-keyboard-behavior.svg"
+image_alt: "Mobile forms and keyboard behavior \u2014 full name, email, next field, submit"
 draft: false
 ---
 

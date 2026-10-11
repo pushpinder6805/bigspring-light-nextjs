@@ -5,6 +5,8 @@ description: "An API can receive malformed or unexpected input even when the web
 desc: "An API can receive malformed or unexpected input even when the website validates every field."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/validating-api-requests-at-the-boundary.svg"
+image_alt: "Validating API requests at the boundary \u2014 input, schema, business rule, accept / reject"
 draft: false
 ---
 

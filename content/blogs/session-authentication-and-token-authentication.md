@@ -5,6 +5,8 @@ description: "Authentication should fit the clients using the application."
 desc: "Authentication should fit the clients using the application."
 category: "Backend & APIs"
 author: "TheTechSpectra"
+image: "/images/articles/session-authentication-and-token-authentication.svg"
+image_alt: "Session authentication and token authentication \u2014 client, credential, identity, permission"
 draft: false
 ---
 

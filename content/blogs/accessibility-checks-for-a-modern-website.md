@@ -5,6 +5,8 @@ description: "Accessible design supports people using keyboards, screen readers,
 desc: "Accessible design supports people using keyboards, screen readers, zoom, and different input devices."
 category: "Web development"
 author: "TheTechSpectra"
+image: "/images/articles/accessibility-checks-for-a-modern-website.svg"
+image_alt: "Accessibility checks for a modern website \u2014 keyboard, focus, labels, contrast"
 draft: false
 ---
 
