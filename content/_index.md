@@ -1,15 +1,82 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: We build fast, secure, and scalable web solutions tailored to your business. Whether you need a complete website overhaul, custom integrations, or performance optimization, we identify and fix the toughest development issues. Our expertise spans front-end, back-end, APIs, and cloud deployment—ensuring your platform runs smoothly, loads quickly, and drives measurable results.
+  title: Thoughtful design. Powerful code. Real possibilities.
+  content: We turn ambitious ideas into websites, applications, and software that people love to use. Designed with purpose. Built to grow with your business.
   image: /images/banner-art.svg
   button:
-    label: "Contact Us"
+    enable: true
+    label: "Start your project"
     link: "/contact"
 
 # feature
-feature: 
-  title: Something You Need To Know
+feature:
+  title: Big ambitions. Beautifully engineered.
+  features:
+  - name: Website development
+    symbol: globe
+    content: Fast, accessible websites that tell your story and turn first impressions into lasting connections.
+  - name: Web applications
+    symbol: app
+    content: From customer portals to powerful dashboards, intuitive tools built around the way your business works.
+  - name: Custom software
+    symbol: code
+    content: Purpose-built systems that simplify operations, solve complex challenges, and scale alongside you.
+  - name: Mobile applications
+    symbol: phone
+    content: Thoughtful mobile experiences that put your product in people’s hands, wherever they go.
+  - name: Game development
+    symbol: game
+    content: Bring interactive worlds to life with engaging mechanics, considered design, and dependable performance.
+  - name: SaaS integrations
+    symbol: integration
+    content: Connect your platforms, automate the repetitive work, and make your tools work better together.
+
+# services
+services:
+  - title: "Digital products, built end to end."
+    content: "We are a full-stack development and digital solutions company specializing in modern web applications, mobile apps, and high-performance backend systems. Our services combine clean coding, smart UI/UX, and seamless cloud integrations to deliver scalable products. From concept to deployment, we help businesses automate workflows, strengthen online presence, and achieve measurable growth with tailored strategies and cutting-edge technology."
+    images:
+      - "/images/service-slide-1.png"
+      - "/images/service-slide-2.png"
+      - "/images/service-slide-3.png"
+    button:
+      enable: true
+      label: Talk to our team
+      link: /contact
+
+  - title: "Security woven into every layer."
+    content: "We specialize in delivering advanced cybersecurity solutions to protect your business from evolving digital threats. Our team provides vulnerability assessments, penetration testing, secure infrastructure setup, and compliance consulting. With proactive monitoring and modern defense frameworks, we ensure your data, applications, and networks remain safe against cyberattacks and unauthorized access."
+    images:
+      - "/images/service-slide-1.png"
+    button:
+      enable: true
+      label: Talk to our team
+      link: /contact
+
+  - title: "Expertise that works together."
+    content: "Our team consists of dedicated developers, designers, and strategists with years of experience across diverse industries. We collaborate efficiently to deliver tailored digital solutions—from full-stack web development to cloud architecture and security optimization. Each member brings deep technical expertise and creative problem-solving to ensure every project exceeds expectations."
+    images:
+      - "/images/service-slide-1.png"
+      - "/images/service-slide-2.png"
+      - "/images/service-slide-3.png"
+    button:
+      enable: true
+      label: Talk to our team
+      link: /contact
+
+  - title: "A partnership beyond the launch."
+    content: "We differentiate ourselves through innovation, transparency, and a client-first approach. Our commitment goes beyond development—we focus on building long-term partnerships and delivering measurable business impact. Every solution we craft blends cutting-edge technology with a deep understanding of your goals, setting us apart in quality, reliability, and execution."
+    images:
+      - "/images/service-slide-1.png"
+      - "/images/service-slide-2.png"
+      - "/images/service-slide-3.png"
+    button:
+      enable: true
+      label: Talk to our team
+      link: /contact
+
+principles:
+  title: Built on the details that matter.
   features:
   - name: "Clean Code"
     icon: "/images/code.svg"
@@ -30,59 +97,16 @@ feature:
     icon: "/images/cloud.svg"
     content: "Full support for AWS, Google Cloud, and Azure with seamless integration, deployment, and scalability for your web applications."
 
-# services
-services:
-  - title: "It is the most advanced digital marketing and it company."
-    content: "We are a full-stack development and digital solutions company specializing in modern web applications, mobile apps, and high-performance backend systems. Our services combine clean coding, smart UI/UX, and seamless cloud integrations to deliver scalable products. From concept to deployment, we help businesses automate workflows, strengthen online presence, and achieve measurable growth with tailored strategies and cutting-edge technology."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "It is a privately owned Information and cyber security company"
-    content: "We specialize in delivering advanced cybersecurity solutions to protect your business from evolving digital threats. Our team provides vulnerability assessments, penetration testing, secure infrastructure setup, and compliance consulting. With proactive monitoring and modern defense frameworks, we ensure your data, applications, and networks remain safe against cyberattacks and unauthorized access."
-    images: 
-      - "/images/service-slide-1.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-  
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Our team consists of dedicated developers, designers, and strategists with years of experience across diverse industries. We collaborate efficiently to deliver tailored digital solutions—from full-stack web development to cloud architecture and security optimization. Each member brings deep technical expertise and creative problem-solving to ensure every project exceeds expectations."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "A company standing different from others"
-    content: "We differentiate ourselves through innovation, transparency, and a client-first approach. Our commitment goes beyond development—we focus on building long-term partnerships and delivering measurable business impact. Every solution we craft blends cutting-edge technology with a deep understanding of your goals, setting us apart in quality, reliability, and execution."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
 
 # workflow
-workflow: 
-  title: "Experience the best workflow with us"
+workflow:
+  title: "Great work starts with a clear process."
   image: "/images/banner.svg"
-  description: ""
+  description: "A collaborative journey with clear decisions, thoughtful feedback, and no guesswork about what comes next."
 
 # call_to_action
 call_to_action:
-  title: Ready to get started?
+  title: Your next chapter starts with an idea.
   content: Partner with us to build fast, secure, and scalable digital solutions that help your business grow. From design to deployment, we handle everything with precision and transparency.
   image: '/images/cta.svg'
   button:

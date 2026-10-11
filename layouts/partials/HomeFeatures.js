@@ -1,38 +1,41 @@
-import { markdownify } from "@lib/utils/textConverter";
-import Image from "next/image";
-
-const HomeFeatures = ({ feature }) => {
+import Icon from "@components/Icon";
+import Link from "next/link";
+export default function HomeFeatures({ feature }) {
   return (
-    <section className="section bg-theme-light">
+    <section className="section services-section" id="services">
       <div className="container">
-        <div className="text-center">
-          <h2>{markdownify(feature.title)}</h2>
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">WHAT WE BUILD</span>
+            <h2>
+              Big ambitions.
+              <br />
+              Beautifully engineered.
+            </h2>
+          </div>
+          <p>
+            One development partner. Every digital possibility. We bring design,
+            technology, and your business goals together.
+          </p>
         </div>
-        <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="service-grid">
           {feature.features.map((item, i) => (
-            <div
-              className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
-              key={`feature-${i}`}
-            >
-              {item.icon && (
-                <Image
-                  className="mx-auto"
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                  alt=""
-                />
-              )}
-              <div className="mt-4">
-                {markdownify(item.name, "h3", "h5")}
-                <p className="mt-3">{item.content}</p>
+            <Link href="/contact" className="service-card" key={item.name}>
+              <div className="card-top">
+                <span className="icon-tile">
+                  <Icon name={item.symbol} />
+                </span>
+                <span className="card-number">0{i + 1}</span>
               </div>
-            </div>
+              <h3>{item.name}</h3>
+              <p>{item.content}</p>
+              <span className="service-card-link">
+                Let’s build it <Icon size={17} />
+              </span>
+            </Link>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default HomeFeatures;
+}

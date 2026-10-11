@@ -8,29 +8,25 @@
     "logo_height": "48",
     "logo_text": "Thetechspectra logo"
   },
-
   "settings": {
     "pagination": 4,
     "summary_length": 200,
     "blog_folder": "blogs"
   },
-
   "nav_button": {
     "enable": true,
-    "label": "Get Started",
+    "label": "Let\u2019s talk",
     "link": "/contact"
   },
-
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
     "footer_content": "The software of your thoughts.",
     "copyright": "Designed and Developed By [Thetechspectra](https://thetechspectra.com/)"
   },
-
   "metadata": {
     "meta_author": "P Chaudhary",
     "meta_image": "",
-    "meta_description": "Nextjs website for Thetechspectra"
+    "meta_description": "TheTechSpectra builds websites, web applications, custom software, mobile apps, games, and SaaS integrations."
   }
 }

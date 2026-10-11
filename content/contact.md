@@ -3,9 +3,9 @@ title: "Contact Us"
 layout: "contact"
 draft: false
 info: 
-  title: Why you should contact us!
+  title: Let’s find the right way forward.
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+    Whether you are starting from scratch or improving an existing product, share your goals with us. We can explore the design, development, and integration work your project needs, then agree on a clear scope together.
   contacts: 
     - "phone: +88 125 256 452"
     - "Mail: info@bigspring.com"

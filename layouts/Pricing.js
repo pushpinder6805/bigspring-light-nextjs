@@ -1,50 +1,54 @@
 import Link from "next/link";
 import Cta from "./components/Cta";
-
-function Pricing({ data }) {
-  const {
-    frontmatter: { title, plans, call_to_action },
-  } = data;
+import Icon from "@components/Icon";
+export default function Pricing({ data }) {
+  const { title, plans, call_to_action } = data.frontmatter;
   return (
     <>
-      <section className="section pb-0">
+      <section className="section inner-page">
         <div className="container">
-          <h1 className="text-center font-normal">{title}</h1>
-          <div className="section row -mt-10 justify-center md:mt-0">
-            {plans.map((plan, index) => (
-              <div
-                className={`col-12 md:col-4 ${
-                  !plan.recommended ? "lg:px-0" : "col-recommended"
-                }`}
-                key={plan.title + index}
+          <div className="page-heading">
+            <span className="eyebrow">A PLAN FOR YOUR NEXT STEP</span>
+            <h1>{title}</h1>
+            <p>
+              Explore the existing plans, or talk to us about a custom project
+              scope.
+            </p>
+          </div>
+          <div className="pricing-grid">
+            {plans.map((plan) => (
+              <article
+                key={plan.title}
+                className={`pricing-card ${plan.recommended ? "recommended" : ""}`}
               >
-                <div className="card text-center">
-                  <h4>{plan.title}</h4>
-                  <div className="mt-5">
-                    <span className="text-5xl text-dark">${plan.price}</span>
-                    <span>/ {plan.type}</span>
-                  </div>
-                  <h5 className="mt-2 font-normal text-text">
-                    {plan.subtitle}
-                  </h5>
-                  <ul className="mt-5">
-                    {plan.features.map((feature, index) => (
-                      <li className="mb-[10px] leading-5" key={index}>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    className={`btn mt-5 ${
-                      plan.recommended ? "btn-primary" : "btn-outline-primary"
-                    }`}
-                    href={plan.button.link}
-                    rel={plan.button.rel}
-                  >
-                    {plan.button.label}
-                  </Link>
+                {plan.recommended && (
+                  <span className="plan-badge">RECOMMENDED</span>
+                )}
+                <h2>{plan.title}</h2>
+                <p>{plan.subtitle}</p>
+                <div className="plan-price">
+                  <strong>${plan.price}</strong>
+                  <span>/ {plan.type}</span>
                 </div>
-              </div>
+                <Link
+                  className={`btn ${plan.recommended ? "btn-primary" : "btn-secondary"}`}
+                  href={plan.button.link}
+                  rel={plan.button.rel}
+                >
+                  {plan.button.label}
+                  <Icon size={17} />
+                </Link>
+                <div className="plan-divider" />
+                <span className="eyebrow">WHAT’S INCLUDED</span>
+                <ul>
+                  {plan.features.map((f) => (
+                    <li key={f}>
+                      <Icon name="check" size={18} />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </article>
             ))}
           </div>
         </div>
@@ -53,5 +57,3 @@ function Pricing({ data }) {
     </>
   );
 }
-
-export default Pricing;

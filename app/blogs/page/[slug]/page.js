@@ -13,7 +13,7 @@ const BlogPagination = async ({ params }) => {
   const { pagination } = config.settings;
   const posts = await getSinglePage(`content/${blog_folder}`).sort(
     (post1, post2) =>
-      new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
+      new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date),
   );
   const postIndex = await getListPage(`content/${blog_folder}/_index.md`);
   //
@@ -29,7 +29,14 @@ const BlogPagination = async ({ params }) => {
       <SeoMeta title={title} />
       <section className="section">
         <div className="container">
-          {markdownify(title, "h1", "h1 text-center font-normal text-[56px]")}
+          <div className="page-heading">
+            <span className="eyebrow">IDEAS & INSIGHTS</span>
+            {markdownify(title, "h1")}
+            <p>
+              Perspectives on design, development, and building better digital
+              experiences.
+            </p>
+          </div>
           <Posts posts={currentPosts} />
           <Pagination
             section={blog_folder}

@@ -1,124 +1,81 @@
 "use client";
-
 import Logo from "@components/Logo";
+import Icon from "@components/Icon";
 import menu from "@config/menu.json";
+import config from "@config/config.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
-import config from "../../config/config.json";
-
-const Header = () => {
+import { useEffect, useState } from "react";
+export default function Header() {
   const pathname = usePathname();
-
-  // distructuring the main menu from menu object
-  const { main } = menu;
-
-  // states declaration
-  const [navOpen, setNavOpen] = useState(false);
-
-  // logo source
-  const { logo } = config.site;
-  const { enable, label, link } = config.nav_button;
-
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+  useEffect(() => {
+    const close = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", close);
+    return () => document.removeEventListener("keydown", close);
+  }, []);
   return (
-    <header className="header">
-      <nav className="navbar container">
-        {/* logo */}
-        <div className="order-0">
-          <Logo src={logo} />
-        </div>
-
-        {/* navbar toggler */}
+    <header className="site-header">
+      <nav className="container nav-shell" aria-label="Main navigation">
+        <Logo />
         <button
-          id="show-button"
-          className="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
-          onClick={() => setNavOpen(!navOpen)}
+          className="menu-toggle"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          aria-expanded={open}
+          aria-controls="main-navigation"
+          onClick={() => setOpen(!open)}
         >
-          {navOpen ? (
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Open</title>
-              <polygon
-                points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-                transform="rotate(45 10 10)"
-              />
-            </svg>
-          ) : (
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Close</title>
-              <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
-            </svg>
-          )}
+          <span>{open ? "✕" : "☰"}</span>
         </button>
-
-        {/* Menu */}
         <div
-          id="nav-menu"
-          className={`order-3 md:order-1 ${
-            navOpen ? "max-h-[1000px]" : "max-h-0"
-          }`}
+          id="main-navigation"
+          className={`navigation ${open ? "is-open" : ""}`}
         >
-          <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
-            {main.map((menu, i) => (
-              <React.Fragment key={`menu-${i}`}>
-                {menu.hasChildren ? (
-                  <li className="nav-item nav-dropdown group relative">
-                    <span className="nav-link inline-flex items-center">
-                      {menu.name}
-                      <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                      </svg>
-                    </span>
-                    <ul className="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
-                      {menu.children.map((child, i) => (
-                        <li className="nav-dropdown-item" key={`children-${i}`}>
-                          <Link
-                            href={child.url}
-                            className="nav-dropdown-link block"
-                          >
+          <ul>
+            {menu.main.map((item) => (
+              <li key={item.name}>
+                {item.hasChildren ? (
+                  <details className="nav-details">
+                    <summary>{item.name}</summary>
+                    <ul>
+                      {item.children.map((child) => (
+                        <li key={child.url}>
+                          <Link href={child.url} onClick={() => setOpen(false)}>
                             {child.name}
                           </Link>
                         </li>
                       ))}
                     </ul>
-                  </li>
+                  </details>
                 ) : (
-                  <li className="nav-item">
-                    <Link
-                      href={menu.url}
-                      onClick={() => setNavOpen(false)}
-                      className={`nav-link block ${
-                        pathname === menu.url ? "nav-link-active" : ""
-                      }`}
-                    >
-                      {menu.name}
-                    </Link>
-                  </li>
+                  <Link
+                    href={item.url}
+                    onClick={() => setOpen(false)}
+                    className={pathname === item.url ? "is-active" : ""}
+                    aria-current={pathname === item.url ? "page" : undefined}
+                  >
+                    {item.name}
+                  </Link>
                 )}
-              </React.Fragment>
-            ))}
-            {enable && (
-              <li className="md:hidden">
-                <Link
-                  className="btn btn-primary z-0 py-[14px]"
-                  href={link}
-                  rel=""
-                >
-                  {label}
-                </Link>
               </li>
-            )}
+            ))}
           </ul>
-        </div>
-        {enable && (
-          <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:order-2 md:ml-0 md:flex">
-            <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
-              {label}
+          {config.nav_button.enable && (
+            <Link
+              className="btn btn-primary nav-cta"
+              href={config.nav_button.link}
+            >
+              {config.nav_button.label}
+              <Icon size={17} />
             </Link>
-          </div>
-        )}
+          )}
+        </div>
       </nav>
     </header>
   );
-};
-
-export default Header;
+}

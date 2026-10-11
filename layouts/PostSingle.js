@@ -21,7 +21,6 @@ const PostSingle = ({ frontmatter, content }) => {
                   width="1000"
                   alt={title}
                   priority={true}
-                  layout="responsive"
                   className="rounded-lg"
                 />
               )}
