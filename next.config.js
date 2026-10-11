@@ -1,9 +1,25 @@
-/**
- * @type {import('next').NextConfig}
- */
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    // Content is read from disk for dynamic routes and the not-found view.
+    outputFileTracingIncludes: {
+      "/*": ["./content/**/*"],
+    },
+  },
+  async redirects() {
+    return [
+      {
+        source: "/favicon.ico",
+        destination: "/images/favicon.png",
+        permanent: true,
+      },
+      {
+        source: "/favicon.png",
+        destination: "/images/favicon.png",
+        permanent: true,
+      },
+    ];
+  },
 };
-
 module.exports = nextConfig;
