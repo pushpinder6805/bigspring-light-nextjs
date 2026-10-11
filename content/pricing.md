@@ -44,7 +44,7 @@ plans:
 
 call_to_action:
   title: Need a larger plan?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: Have a project that needs a different approach? Tell us about your goals and we can discuss a scope tailored to your product, integrations, and team.
   image: '/images/cta.svg'
   button:
     enable: true

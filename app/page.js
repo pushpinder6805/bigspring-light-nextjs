@@ -5,13 +5,15 @@ import SeoMeta from "@layouts/SeoMeta";
 import HomeBanner from "@layouts/partials/HomeBanner";
 import HomeFeatures from "@layouts/partials/HomeFeatures";
 import Services from "@layouts/partials/Services";
+import Principles from "@layouts/partials/Principles";
 import Workflow from "@layouts/partials/Workflow";
 import { getListPage } from "../lib/contentParser";
 
 const Home = async () => {
   const homePage = await getListPage("content/_index.md");
   const { frontmatter } = homePage;
-  const { banner, feature, services, workflow, call_to_action } = frontmatter;
+  const { banner, feature, services, principles, workflow, call_to_action } =
+    frontmatter;
   const { title } = config.site;
 
   return (
@@ -26,6 +28,8 @@ const Home = async () => {
 
       {/* services */}
       <Services services={services} />
+
+      <Principles principles={principles} />
 
       {/* workflow */}
       <Workflow workflow={workflow} />
